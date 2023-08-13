@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background: #1E2952;
+}
+
+h1{
+    text-align: center;
+    margin: 75px 0px 0px;
+    color: whitesmoke;
+}
+
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+
+.container p{
+    font-weight: 600;
+}
+
+.container input{
+    margin: 8px 0px 0px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #0070BB;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.container button{
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    background-color: #0070BB;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+#qr-btn:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+#qr-btn:active{
+    color: #0070BB;
+    background-color: whitesmoke;
+}
+
+.container img{
+    width: 100%;
+}
+
+#img-box{
+    margin: 5px 0px;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 900ms;
+    cursor: pointer;
+}
+
+#img-box.show-img{
+    margin: 30px auto;
+    border: 1.5px solid #0070BB;
+    border-radius: 3px;
+    padding: 8px;
+    max-height: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#credit{
+    margin: 20px 0px 0px;
+    font-weight: 100;
+    font-size: 10px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+#img-box:active{
+    width: 220px;
+}
+
+.error{
+    animation: shake 90ms ease-in-out 5;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
